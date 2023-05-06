@@ -1,6 +1,3 @@
-### packet-tracer
-
-
 ## Packet Tracer - Create a Simple Network
 
 ### Objectives
