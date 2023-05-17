@@ -1,4 +1,4 @@
-## Packet Tracer - Create a Simple Network
+1. Packet Tracer - Create a Simple Network
 
 ### Objectives
 In this activity, you will build a simple network in Packet Tracer in the Logical Workspace.
@@ -95,4 +95,6 @@ The subnet mask is used to differentiate the host and the network ID portion of 
 The default gateway is analogous to the street intersection. The traffic from the 192.168.0 street has to exit through the intersection to another street. Another street is another network. In this network, default gateway is the wireless router that directs the traffic from the local network to the cable modem, and the traffic is then sent to the ISP.
 ```
 ![image](https://user-images.githubusercontent.com/51156057/236613889-c2c1c784-5a71-4672-ad6c-4cb50362f782.png)
+
+2. Packet Tracer - Creating a Cyber World
 
