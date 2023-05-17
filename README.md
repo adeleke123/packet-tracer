@@ -1,100 +1,33 @@
-1. Packet Tracer - Create a Simple Network
+## Networking Packet Tracer
 
-### Objectives
-In this activity, you will build a simple network in Packet Tracer in the Logical Workspace.
+This repository showcases my activities at the Cisco Networking Academy, focusing on enhancing my expertise in cybersecurity. Below, I have outlined two specific activities that I have worked on:
 
-+ Part 1: Build a Simple Network
+### Packet Tracer - Create a Simple Network:
+In this activity, I utilized Packet Tracer, a network simulation tool, to design and implement a basic network infrastructure. I set up different network devices such as routers, switches, and end devices, and configured their respective IP addresses, subnet masks, and default gateways. Additionally, I established connectivity between these devices, ensuring seamless communication within the network.
 
-+ Part 2: Configure the End Devices and Verify Connectivity
+### Packet Tracer - Creating a Cyber World:
+During the "Packet Tracer - Creating a Cyber World" activity, I utilized Packet Tracer to construct a simulated cyber environment where I focused on implementing several security measures to safeguard the network against potential threats. The activity consisted of various parts, each involving the configuration of different servers and services. Here is an overview of what I accomplished:
 
-### Instructions
-+ Part 1: Build a Simple Network
-+ In this part, you will build a simple network by deploying and connecting the network devices in the Logical Workspace.
+`Part 1: Configure the FTP Server`
+In this section, I configured an FTP (File Transfer Protocol) server to facilitate secure file transfers within the network. I established user accounts, defined access permissions, and ensured that data transfers were encrypted to prevent unauthorized access.
 
-### Step 1: Add network devices to the workspace.
-In this step, you will add a PC, laptop, and a cable modem to the Logical Workspace.
+`Part 2: Configure the Web Server`
+For the web server configuration, I set up a secure environment for hosting websites. I implemented SSL/TLS certificates, enabled HTTPS, and applied security best practices to protect the server and its hosted content from potential cyber threats.
 
-A cable modem is a hardware device that allows communications with an Internet Service Provider (ISP). The coaxial cable from the ISP is connected to the cable modem, and an Ethernet cable from the local network is also connected. The cable modem converts the coaxial connection to an Ethernet connection.
+`Part 3: Configure the Email Server`
+In this part, I configured an email server to facilitate secure communication within the network. I implemented secure protocols such as SMTP (Simple Mail Transfer Protocol) with TLS encryption, ensured proper authentication and access control, and implemented measures to prevent spam and other email-based threats.
 
-Using the Device-Type Selection Box, add the following devices to the workspace. The category and sub-category associated with the device are listed below:
+`Part 4: Configure the DNS Server`
+To ensure secure and reliable DNS (Domain Name System) resolution, I configured a DNS server. I established proper zone configurations, implemented secure DNS protocols such as DNSSEC (Domain Name System Security Extensions), and applied access control policies to protect against DNS-related attacks.
 
-+   PC: End Devices > End Devices > PC
+`Part 5: Configure the NTP Server`
+For accurate time synchronization within the network, I configured an NTP (Network Time Protocol) server. I ensured that the NTP server was securely configured to prevent potential attacks or unauthorized time modifications, thus maintaining the accuracy and integrity of time synchronization.
 
-+   Laptop: End Devices > End Devices > Laptop
+`Part 6: Configure the AAA Server`
+In this section, I configured an AAA (Authentication, Authorization, and Accounting) server to centralize user authentication and access control. I defined user profiles, implemented strong authentication mechanisms, and enforced access policies to enhance network security and monitor user activities.
 
-+   Cable Modem: Network Devices > WAN Emulation > Cable Modem
+Throughout the activity, I implemented security best practices, considered potential vulnerabilities, and applied appropriate security controls such as firewalls, access control lists (ACLs), intrusion detection systems (IDS), and virtual private networks (VPNs) to protect the network infrastructure from unauthorized access and potential cyber attacks.
 
-### Step 2: Change display names of the nework devices.
-+     To change the display names of the network devices, click the device icon in the Logical Workspace.
 
-+     Click the Config tab in the device configuration window.
-
-+     Enter the new name of the newly added device into the Display Name field: PC, Laptop, and Cable Modem.
-
-### Step 3: Add the physical cabling between devices on the workspace.
-Using the Device-Type Selection Box, add the physical cabling between devices on the workspace.
-
-+     The PC will need a copper straight-through cable to connect to the wireless router. Using the Device-Type Selection Box, click Connections (lightning bolt icon). Select the copper straight-through cable in the Device-Specific Selection Box and attach it to the FastEthernet0 interface of the PC and the Ethernet 1 interface of the wireless router.
-
-+     The wireless router will need a copper straight-through cable to connect to the cable modem. Select the copper straight-through cable in the Device-Specific Selection Box and attach it to the internet interface of the wireless router and the Port 1 interface of the cable modem.
-
-+     The cable modem will need a Coaxial cable to connect to the internet cloud. Select the Coaxial cable in the Device-Specific Selection Box and attach it to the Port 0 interface of the cable modem and the Coaxial 7 interface of the internet cloud.
-
-### Part 2: Configure the End Devices and Verify Connectivity
-In this part, you will connect a PC and a laptop to the Wireless router. The PC will be connected to the network using an Ethernet cable. For the Laptop, you will replace the wired Ethernet network interface card (NIC) with a wireless NIC and connect the Laptop to the router wirelessly.
-
-After both end devices are connected to the network, you will verify connectivity to cisco.srv. The PC and the Laptop will each be assigned an IP (Internet Protocol) address. Internet Protocol is a set of rules for routing and addressing data on the internet. The IP addresses are used to identify the devices on a network and allow the devices to connect and transfer data on a network.
-
-### Step 1: Configure the PC.
-You will configure the PC for the wired network in this step.
-
-+     Click the PC. In the Desktop tab, navigate to IP Configuration to verify that DHCP is enabled and the PC has received an IP address.
-
-Select DHCP for the IP Configuration heading if you do not see an IP address for the IPv4 Address field. Observe the process as the PC is receiving an IP address from the DHCP server.
-
-DHCP stands for dynamic host configuration protocol. This protocol assigns IP addresses to devices dynamically. In this simple network, the Wireless Router is configured to assign IP addresses to devices that request IP addresses. If DHCP is disabled, you will need to assign an IP address and configure all the necessary information to communicate with other devices on the network and the internet.
-
-+     Close IP Configuration. In the Desktop tab, click Command Prompt.
-
-+     At the prompt, enter ipconfig /all to review the IPv4 addressing information from the DHCP server. The PC should have received an IPv4 address in the 192.168.0.x range.
-
-Note: There are two types of IP addresses: IPv4 and IPv6. An IPv4 (internet protocol version 4) address is a string of numbers in the form of x.x.x.x as you have been using in this lab. As the internet grew, the need for more IP addresses became necessary. So IPv6 (internet protocol version 6) was introduced in the late 1990s to address the limitations of IPv4. The details of IPv6 addressing are beyond the scope of this activity.
-
-+     Test connectivity to the cisco.srv from the PC. From the command prompt, issue the command ping cisco.srv. It may take a few seconds for the ping to return. Four replies should be received.
-
-### Step 2: Configure the Laptop.
-In this step, you will configure the Laptop to access the wireless network.
-
-+     Click Laptop, and select the Physical tab.
-
-+     In the Physical tab, you will need to remove the Ethernet copper module and replace it with the Wireless WPC300N module.
-
-+    Power off Laptop by clicking the power button on the side of the laptop.
-
-+    Remove the currently installed Ethernet copper module by clicking on the module on the side of the laptop and dragging it to the MODULES pane on the left of the laptop window.
-
-+    Install the wireless WPC300N module by clicking it in the MODULES pane and dragging it to the empty module port on the side of the Laptop.
-
-+    Power on the Laptop by clicking the Laptop power button again.
-
-+     With the wireless module installed, connect the Laptop to the wireless network. Click the Desktop tab and select the PC Wireless.
-
-+     Select the Connect tab. After a slight delay, the wireless network HomeNetwork will be visible in the list of wireless networks. Click Refresh if necessary to see the list of available networks. Select the HomeNetwork. Click Connect.
-
-+     Close PC Wireless. Select Web Browser in the Desktop tab.
-
-+      In the Web Browser, navigate to cisco.srv.
-
-### Reflection
-```
-
-The IP addresses for the end devices can range from 192.168.0.2 to 192.168.0.254. Each NIC will get a unique IP address in the same network.
-
-The subnet mask is used to differentiate the host and the network ID portion of the IP address. You can relate the IP address to your street address. The subnet mask defines the length of the street name. The network part of the address is your street, 192.168.0. The house number is the host port of the IP address. For the IP address 192.168.0.2, the house number is 2 and the street is 192.168.0. If there is more than one house on the same street, for example, house number 3, will have an address 192.168.0.3. The maximum number of houses on this street is 253, ranging from 2 to 254.
-
-The default gateway is analogous to the street intersection. The traffic from the 192.168.0 street has to exit through the intersection to another street. Another street is another network. In this network, default gateway is the wireless router that directs the traffic from the local network to the cable modem, and the traffic is then sent to the ISP.
-```
-![image](https://user-images.githubusercontent.com/51156057/236613889-c2c1c784-5a71-4672-ad6c-4cb50362f782.png)
-
-2. Packet Tracer - Creating a Cyber World
+Please note that these activities represent only a subset of my work at the Cisco Networking Academy, and I have engaged in numerous other exercises and learning modules to further develop my cybersecurity skills.
 
